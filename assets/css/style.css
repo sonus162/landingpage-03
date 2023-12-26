@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     font-family: "Poppins";
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;
@@ -47,12 +48,16 @@ body {
 }
 /* header */
 .header {
-    padding: 40px 0 50px;
+    position: sticky;
+    top: -44px;
+    background: #fff;
+    z-index: 999;
 }
 .header__body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 52px 0 8px;
 }
 .header__logo {
     height: 37px;
@@ -92,6 +97,9 @@ body {
 }
 
 /* Hero */
+.hero {
+    padding-top: 50px;
+}
 .hero__body {
     display: flex;
     align-items: center;
@@ -355,6 +363,7 @@ body {
     font-weight: 400;
 }
 
+/* ========= Testimonial ============== */
 .testimonial {
     padding: 40px 0;
 }
@@ -446,4 +455,60 @@ body {
     position: relative;
     width: 679px;
     height: 481px;
+}
+
+/* ========== Subscribe ========== */
+.subscribe {
+    margin-top: 90px;
+    padding: 76px 0;
+    background: #def6f5;
+}
+.subscribe__content {
+    display: flex;
+    align-items: center;
+}
+.subscribe__title {
+    margin-bottom: 18px;
+}
+.subscribe__btn {
+    margin-left: auto;
+    margin-right: 200px;
+    padding: 26px 0;
+    min-width: 186px;
+}
+
+/* ============ Footer =========*/
+.footer {
+    padding-top: 100px;
+    margin-top: 30px;
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .column {
+    width: 20%;
+}
+.footer__heading {
+    margin-bottom: 25px;
+    color: #2e2e2e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #535353;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer__link i {
+    margin-right: 9px;
+    width: 20px;
+}
+.footer__copy-right {
+    display: block;
+    margin: auto;
+    padding: 50px 0;
 }
